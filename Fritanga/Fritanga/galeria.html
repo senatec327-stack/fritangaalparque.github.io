@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - Fritanga al Parque </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdfcf7;
+    }
+    .hero {
+      background: url(img/fritanga\,banner2.jpg) center/cover no-repeat;
+      height: 22.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- barra-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/LOGO_FRITOS.png" alt="Logo Fritanga al Parque" width="60" class="me-2">
+        <span class="fw-bold text-danger">Fritanga al Parque</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" 
+              aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="menu">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="index.html">Inicio</a>
+          <a class="nav-link" href="informacion.html">Información</a>
+          <a class="nav-link" href="programacion.html">Programación</a>
+          <a class="nav-link" href="galeria.html">Galería</a>
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="display-4 fw-bold">Galería</h1>
+      <p class="lead">Revive los mejores momentos del festival.</p>
+    </div>
+  </section>
+  <!-- GRID GALERÍA -->
+  <section class="container my-5">
+    <div class="row g-4">
+      <!-- Imagen 1 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria1.jpg" class="card-img-top" alt="Imagen 1">
+        </div>
+      </div>
+      <!-- Imagen 2 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria2.png" class="card-img-top" alt="Imagen 2">
+        </div>
+      </div>
+      <!-- Imagen 3 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria3.jpeg" class="card-img-top" alt="Imagen 3">
+        </div>
+      </div>
+      <!-- Imagen 4 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria4.jpg" class="card-img-top" alt="Imagen 4">
+        </div>
+      </div>
+      <!-- Imagen 5 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria5.jpg" class="card-img-top" alt="Imagen 5">
+        </div>
+      </div>
+      <!-- Imagen 6 -->
+      <div class="col-md-4">
+        <div class="card shadow">
+          <img src="img/galeria6.jpg" class="card-img-top" alt="Imagen 6">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Footer con logo -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Fritanga al Parque - Todos los derechos reservados</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
